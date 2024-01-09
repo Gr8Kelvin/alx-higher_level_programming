@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 """
-function that appends a string
+function that appends a strig 
 """
+import json
 
 
-def append_write(filename="", text=""):
-    """eturns the number of characters added:"""
-    with open(filename, 'a', encoding='utf=8') as f:
-        return f.write(text)
+def to_json_string(my_obj):
+    """
+    returns the JSON representation of an object (string)
+    """
+
+    return json.dumps(my_obj)
